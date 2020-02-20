@@ -40,6 +40,7 @@ node_modules/
 /postgres14
 /redis
 /elasticsearch
+/pgbouncer
 
 # Ignore Apple files
 .DS_Store
@@ -78,3 +79,5 @@ docker-compose.override.yml
 
 *storybook.log
 storybook-static
+
+local/sites-available/*copy.conf
