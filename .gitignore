@@ -43,6 +43,7 @@
 /postgres14
 /redis
 /elasticsearch
+/pgbouncer
 
 # ignore Helm charts
 /chart/*.tgz
@@ -69,3 +70,5 @@ yarn-debug.log
 
 # Ignore Docker option files
 docker-compose.override.yml
+
+local/sites-available/*copy.conf
