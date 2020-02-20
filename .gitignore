@@ -43,6 +43,7 @@
 /postgres14
 /redis
 /elasticsearch
+/pgbouncer
 
 # Ignore Apple files
 .DS_Store
@@ -63,3 +64,5 @@ yarn-debug.log
 
 # Ignore Docker option files
 docker-compose.override.yml
+
+local/sites-available/*copy.conf
