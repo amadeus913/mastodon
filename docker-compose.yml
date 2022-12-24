@@ -3,17 +3,18 @@
 
 services:
 
-    restart: always
-    shm_size: 256mb
-    image: hartmutcouk/pg-repack-docker:1.4.7
-    networks:
-      - internal_network
-    healthcheck:
-      test: ['CMD', 'pg_isready', '-U', 'postgres']
-    volumes:
-      - ./postgres14:/var/lib/postgresql/data
-    environment:
-      - 'POSTGRES_HOST_AUTH_METHOD=trust'
+db_backend:
+  restart: always
+  shm_size: 256mb
+  image: hartmutcouk/pg-repack-docker:1.4.7
+  networks:
+    - internal_network
+  healthcheck:
+    test: ['CMD', 'pg_isready', '-U', 'postgres']
+  volumes:
+    - ./postgres14:/var/lib/postgresql/data
+  environment:
+    - 'POSTGRES_HOST_AUTH_METHOD=trust'
 
 # If you use pgbouncer, uncomment.
 #  db:
