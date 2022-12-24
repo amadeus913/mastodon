@@ -3,13 +3,9 @@
 
 services:
 
-  db_backend:
     restart: always
     shm_size: 256mb
-    build:
-      context: .
-      # Deleting DB-free space at non-stop instance by pg_repack
-      dockerfile: Dockerfile.postgres
+    image: hartmutcouk/pg-repack-docker:1.4.7
     networks:
       - internal_network
     healthcheck:
