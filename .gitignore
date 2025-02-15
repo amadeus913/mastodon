@@ -70,12 +70,9 @@ yarn-debug.log
 # Ignore Docker option files
 docker-compose.override.yml
 
-<<<<<<< HEAD
 # Ignore dotenv .local files
 .env*.local
 
 # Ignore local-only rspec configuration
 .rspec-local
-=======
 local/sites-available/*copy.conf
->>>>>>> 6b19818ae (Added Docker-related configuration files for v3.5.2)
